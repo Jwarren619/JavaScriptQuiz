@@ -2,13 +2,13 @@
     background-color: aqua;
     font-size: large;
 }
-
+/* box sixing will help with my width and height of any element I want to create */
 *{
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0%;
     padding: 0%;
-    color: lightcoral;
+    color: coral;
 }
 
 h1,
@@ -17,3 +17,36 @@ h3,
 h4 {
     margin-bottom: 1rem;
 }
+/* Changed the color to coral and fixed all of the font weights and sizes */
+ h1 {
+    color:coral;
+    margin-bottom: 5.4rem;
+ }
+
+ h1 > span {
+    font-weight: 400;
+    font-size: medium;
+
+ }
+
+ h2 {
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 3rem;
+ }
+
+h3 {
+    font-weight: 400;
+    font-size: medium;
+}
+ .main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    max-width: 80rem;
+ }
+ 
+
