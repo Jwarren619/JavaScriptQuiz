@@ -1,5 +1,5 @@
 :root {
-    background-color: aqua;
+    background-image:url(./Photo-Quiz.jpeg);
     font-size: large;
 }
 /* box sixing will help with my width and height of any element I want to create */
@@ -93,7 +93,7 @@ h3 {
     box-shadow: 0 0.4rem 14px 0 coral;
     transform: translateY(-0.1rem);
     transition: transform 150rem;
-    
+
 }
 
 .btn[disabled]:hover {

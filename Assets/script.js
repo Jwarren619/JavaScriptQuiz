@@ -1,8 +1,11 @@
-var answer = document.querySelector('.start-button')
-var answer = document.querySelector(".large-font word-blank")
-var answer = document.querySelector(".correct")
-var answer= document.querySelector(".not correct")
-var startquiz = document.querySelector(".large-font start-quiz")
+const question = document.getElementById('question');
+const choices = Array.from(document.getElementsByClassName("choice-text"));
+
+var 
+var 
+var 
+var 
+var )
 
 
 
