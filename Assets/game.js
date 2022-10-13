@@ -68,36 +68,49 @@ startQuiz = () => {
 
 }
 getNewQuestion = () => {
+  if (availableQuestions.length === 0 || questionCounter > max_questions) {
+    return window.location.assign("./end.html");
+  }
+
     questionCounter++;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currectQuestion = availableQuestions[questionIndex];
     question.innerText = currectQuestion.question;
 
-    choices.forEach( choices => {
+    choices.forEach(choice => {
         const number = choice.dataset['number'];
         choice.innerText = currectQuestion["choice" + number];
-    });
-}
+    })
 
 
+availableQuestions.splice(questionIndex, 1);
+acceptingAnswers = true;
+};
+
+choices.forEach(choice => {
+    choice.addEventListener("click", e => {
+        if (!acceptingAnswers) return;
+        acceptingAnswers = false
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset["number"];
+        console.log(selectedAnswer);
+        
+        const classToApply = 
+        selectedAnswer == currectQuestion.answer ? "correct" : "incorrect";
 
 
-
-
-
-function startquiz() {
-    var words = ["javascript", "HTML", "Cascading"]
-    var timeLeft= 50;
-
-    var timeInterval = setInterval(function(){
-
-        if (timeLeft > 1) {
-            timer.textContent + timeLeft;
-            timeLeft--;
-
-        }
-
+       selectedChoice.parentElements.classList.add(classToApply);
+        setTimeout(() => {
+       selectedChoice.parentElements.classList.remove(classToApply);
+        getNewQuestion();
     }, 1000);
-}
 
+});
+
+ incrementScore = num => {
+    score =+ num;
+    scoreText.innerText = score;
+ }
+
+startquiz();
