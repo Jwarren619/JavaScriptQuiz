@@ -57,8 +57,8 @@ var questions = [
                     }];
     
 
-const max_questions = 3;
-const correct_bonus = 10;
+const MAX_QUESTIONS = 3;
+const CORRECT_BONUS = 10;
 
 startQuiz = () => {
     questionCounter = 0;
@@ -94,17 +94,19 @@ choices.forEach(choice => {
         acceptingAnswers = false
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
-        console.log(selectedAnswer);
+        
         
         const classToApply = 
         selectedAnswer == currectQuestion.answer ? "correct" : "incorrect";
 
+        if (classToApply === "CORRECT_BONUS");
 
        selectedChoice.parentElements.classList.add(classToApply);
         setTimeout(() => {
        selectedChoice.parentElements.classList.remove(classToApply);
         getNewQuestion();
     }, 1000);
+});
 
 });
 
