@@ -15,17 +15,17 @@ var questions = [
     choice3: "Java Script Object Notation",
     choice4: "Java Script Objection Notation",
     answer: 1
-    },
+    }];
 
     questions = [
         {
-        question: "What does JSON stand for?",
-        choice1: "Jan Script Open Note",
-        choice2: "Jinx Script Oval Nav",
-        choice3: "Java Script Object Notation",
+        question: "What is the meaning of HREF?",
+        choice1: "Hashtag",
+        choice2: "Hyperlink",
+        choice3: "J",
         choice4: "Java Script Objection Notation",
         answer: 1
-        },
+        }];
 
         questions = [
             {
@@ -35,7 +35,7 @@ var questions = [
             choice3: "Java Script Object Notation",
             choice4: "Java Script Objection Notation",
             answer: 1
-            },
+            }];
 
             questions = [
                 {
