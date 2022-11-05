@@ -1,10 +1,24 @@
+
+:root {
+        background-image:url(../Assets/Images/Space\ Image-\ Quiz.webp);
+        font-size: large;
+}     
+  body {
+    color: azure;
+
+  }
+   
+        
+        
+
 .choice-main {
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
     font-size: 1.8rem;
     border: 0.1rem solid coral;
-    background-color: white;
+    
+
 }
 
 .choice-main:hover {
@@ -16,7 +30,7 @@
 
 .choice-prefix {
    padding: 1.5rem 2.5rem;
-   background-color:black;
+   background-color:rgb(253, 253, 253);
    color: white;
 
 }
